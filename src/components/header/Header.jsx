@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 import Logo from '../../assets/logo.png';
 
@@ -25,10 +25,10 @@ export function Header() {
           <a href="#servicos">Serviços</a>
           <a href="#contato">Contato</a>
         </nav>
-        <div className="menu-icon" onClick={toggleMenu}>
-          <div className="bar"></div>
-          <div className="bar"></div>
-          <div className="bar"></div>
+        <div className={`menu-icon ${menuOpen ? 'open' : ''}`} onClick={toggleMenu} aria-label="Abrir/Fechar Menu">
+          <span className="bar"></span>
+          <span className="bar"></span>
+          <span className="bar"></span>
         </div>
       </div>
     </header>

@@ -5,9 +5,16 @@ header {
   justify-content: space-between;
   align-items: center;
 
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+
   background: $gray-100;
 
   padding: 15px 40px;
+
+  width: 100%;
 
   .container {
     display: flex;
@@ -20,10 +27,8 @@ header {
     margin: 0 auto;
   }
 
-  .logo {
-    img {
-      max-height: 40px;
-    }
+  .logo img {
+    max-height: 40px;
   }
 
   .nav {
@@ -50,16 +55,57 @@ header {
   .menu-icon {
     display: none;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    z-index: 1100;
+
+    width: 30px;
+    height: 25px;
 
     cursor: pointer;
 
     .bar {
-      width: 25px;
+      position: absolute;
+
+      width: 100%;
       height: 3px;
 
       background-color: $gray-700;
 
-      margin: 3px 0;
+      border-radius: 3px;
+
+      transition: all 0.3s ease-in-out;
+    }
+
+    .bar:nth-child(1) {
+      top: 0;
+    }
+
+    .bar:nth-child(2) {
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .bar:nth-child(3) {
+      bottom: 0;
+    }
+
+    &.open {
+      .bar:nth-child(1) {
+        top: 50%;
+        transform: translateY(-50%) rotate(45deg);
+      }
+
+      .bar:nth-child(2) {
+        opacity: 0;
+      }
+
+      .bar:nth-child(3) {
+        bottom: 50%;
+        transform: translateY(50%) rotate(-45deg);
+      }
     }
   }
 
@@ -75,7 +121,9 @@ header {
 
       width: 100%;
 
-      background-color: white;
+      background-color: $white;
+
+      padding: 20px 0;
 
       &.active {
         display: flex;
