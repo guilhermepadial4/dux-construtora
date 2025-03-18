@@ -1,0 +1,136 @@
+@use '../../styles/variables.scss' as *;
+
+.contact-us {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  padding: 60px 20px;
+
+  .contact-info {
+    text-align: left;
+
+    h2 {
+      font-size: 2.2rem;
+      color: $primary-dark;
+
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1rem;
+      color: $gray-700;
+
+      margin-bottom: 10px;
+    }
+
+    .info-item {
+      display: flex;
+      align-items: center;
+
+      margin-bottom: 15px;
+
+      .icon {
+        font-size: 1.5rem;
+        color: $primary-dark;
+
+        margin-right: 10px;
+      }
+    }
+  }
+
+  .contact-form {
+    text-align: left;
+
+    h2 {
+      font-size: 2.2rem;
+      color: $primary-dark;
+
+      margin-bottom: 20px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+
+      input,
+      textarea {
+        font-size: 1rem;
+
+        border: 1px solid $gray-300;
+        border-radius: 5px;
+
+        margin-bottom: 15px;
+
+        padding: 12px;
+      }
+
+      textarea {
+        resize: vertical;
+
+        min-height: 150px;
+      }
+
+      button {
+        font-size: 1rem;
+        color: $white;
+        background-color: $primary-color;
+
+        border: none;
+        border-radius: 5px;
+
+        padding: 12px 20px;
+
+        cursor: pointer;
+
+        transition: background-color 0.3s ease;
+
+        &:hover {
+          background-color: $primary-dark;
+        }
+      }
+    }
+  }
+
+  .success-message {
+    display: flex;
+    align-items: center;
+
+    color: $success-dark;
+
+    background-color: $gray-300;
+
+    border-radius: 5px;
+
+    margin-bottom: 20px;
+
+    padding: 15px;
+
+    animation: fadeInOut 3s ease-in-out;
+  }
+
+  .success-icon {
+    font-size: 1.5rem;
+
+    margin-right: 10px;
+  }
+
+  @keyframes fadeInOut {
+    0%,
+    100% {
+      opacity: 0;
+    }
+    10%,
+    90% {
+      opacity: 1;
+    }
+  }
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+}
