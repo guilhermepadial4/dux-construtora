@@ -1,6 +1,7 @@
 import { Faq } from './components/faq/Faq';
 import { Header } from './components/header/Header';
 import { HeroBanner } from './components/herobanner/HeroBanner';
+import { WhyChooseUs } from './components/whyschooseus/WhyChooseUs';
 
 import './styles/_globals.scss';
 
@@ -9,6 +10,7 @@ export function App() {
     <>
       <Header />
       <HeroBanner />
+      <WhyChooseUs />
       <Faq />
     </>
   );
