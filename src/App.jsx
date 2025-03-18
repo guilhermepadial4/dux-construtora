@@ -1,3 +1,4 @@
+import { Faq } from './components/faq/Faq';
 import { Header } from './components/header/Header';
 import { HeroBanner } from './components/herobanner/HeroBanner';
 
@@ -8,6 +9,7 @@ export function App() {
     <>
       <Header />
       <HeroBanner />
+      <Faq />
     </>
   );
 }
