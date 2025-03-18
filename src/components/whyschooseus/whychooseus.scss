@@ -6,8 +6,6 @@
 
   padding: 80px 20px;
 
-  background-color: $gray-100;
-
   .content-wrapper {
     max-width: 1200px;
 
@@ -143,4 +141,13 @@
       grid-template-columns: 1fr;
     }
   }
+}
+
+.divider {
+  width: 95%;
+  height: 2px;
+
+  background-color: $gray-200;
+
+  margin: auto;
 }

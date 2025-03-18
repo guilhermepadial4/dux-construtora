@@ -5,7 +5,8 @@ import { AiOutlinePlus, AiOutlineMinus } from 'react-icons/ai';
 const faqData = [
   {
     question: 'Quais serviços a Dux Construtora oferece?',
-    answer: 'A Dux Construtora oferece serviços de construção civil, reformas, consultoria em engenharia e projetos arquitetônicos personalizados.',
+    answer:
+      'A Dux Construtora oferece serviços de construção civil, reformas, consultoria em engenharia e projetos arquitetônicos personalizados.',
   },
   {
     question: 'A construtora trabalha com projetos residenciais e comerciais?',
@@ -13,7 +14,8 @@ const faqData = [
   },
   {
     question: 'Os projetos incluem acompanhamento de engenheiros?',
-    answer: 'Sim, todos os projetos contam com acompanhamento de engenheiros qualificados para garantir conformidade com normas e qualidade no resultado final.',
+    answer:
+      'Sim, todos os projetos contam com acompanhamento de engenheiros qualificados para garantir conformidade com normas e qualidade no resultado final.',
   },
   {
     question: 'A construtora possui certificações de qualidade?',
@@ -36,9 +38,7 @@ export function Faq() {
           <div key={index} className={`faq-item ${openIndex === index ? 'open' : ''}`}>
             <button className="faq-question" onClick={() => toggleFAQ(index)}>
               {item.question}
-              <span className="icon">
-                {openIndex === index ? <AiOutlineMinus /> : <AiOutlinePlus />}
-              </span>
+              <span className="icon">{openIndex === index ? <AiOutlineMinus /> : <AiOutlinePlus />}</span>
             </button>
             <div className="faq-answer">{item.answer}</div>
           </div>
