@@ -34,11 +34,11 @@ export function Contact() {
           <p>Estamos prontos para atender você!</p>
           <div className="info-item">
             <FaMapMarkerAlt className="icon" />
-            <p>Endereço: Rua Exemplo, 123 - São Paulo, SP</p>
+            <p>Rua Vieira de Morais, 2110 - Campo Belo, SP</p>
           </div>
           <div className="info-item">
             <FaPhoneAlt className="icon" />
-            <p>Telefone: (11) 1234-5678</p>
+            <p>Telefone: (11) 96021-0555</p>
           </div>
           <div className="info-item">
             <FaEnvelope className="icon" />

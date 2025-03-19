@@ -14,10 +14,10 @@ export function Footer() {
         <div className="footer-section contact">
           <h3>Contato</h3>
           <p>
-            <FaMapMarkerAlt /> Rua Exemplo, 123 - São Paulo, SP
+            <FaMapMarkerAlt /> Rua Vieira de Morais, 2110 - Campo Belo, SP
           </p>
           <p>
-            <FaPhoneAlt /> (11) 1234-5678
+            <FaPhoneAlt /> (11) 96021-0555
           </p>
           <p>
             <FaEnvelope /> contato@duxconstrutora.com.br
