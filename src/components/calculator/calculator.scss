@@ -1,0 +1,108 @@
+@use '../../styles/variables.scss' as *;
+
+.calculator {
+  max-width: 600px;
+
+  background-color: $white;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+
+  margin: 40px auto;
+
+  border-radius: 12px;
+
+  padding: 40px;
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  }
+
+  h2 {
+    font-size: 2.2rem;
+    text-align: center;
+    color: $primary-color;
+
+    margin-bottom: 30px;
+  }
+
+  .input-group {
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 20px;
+
+    label {
+      font-weight: 600;
+      color: $gray-800;
+
+      margin-bottom: 8px;
+    }
+
+    input {
+      font-size: 1rem;
+
+      border: 2px solid $gray-300;
+      border-radius: 8px;
+
+      padding: 12px 15px;
+
+      transition: border-color 0.3s ease;
+
+      &:focus {
+        border-color: $primary-color;
+
+        outline: none;
+      }
+    }
+  }
+
+  button {
+    font-size: 1.1rem;
+    color: white;
+
+    background-color: $primary-color;
+
+    padding: 14px 20px;
+
+    border: none;
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    transition: background-color 0.3s ease, transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.05);
+
+      background-color: $primary-dark;
+    }
+  }
+
+  .result {
+    text-align: center;
+
+    background-color: $gray-100;
+
+    border-radius: 8px;
+
+    margin-top: 30px;
+
+    padding: 20px;
+
+    h3 {
+      font-size: 1.8rem;
+      color: $primary-color;
+
+      margin-bottom: 15px;
+    }
+
+    p {
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: $gray-900;
+    }
+  }
+}

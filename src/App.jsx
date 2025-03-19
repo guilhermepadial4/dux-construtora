@@ -1,3 +1,4 @@
+import { Calculator } from './components/calculator/Calculator';
 import { Contact } from './components/contact/Contact';
 import { Faq } from './components/faq/Faq';
 import { Footer } from './components/footer/Footer';
@@ -14,6 +15,7 @@ export function App() {
       <HeroBanner />
       <WhyChooseUs />
       <Faq />
+      <Calculator />
       <Contact />
       <Footer />
     </>
