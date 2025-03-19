@@ -1,17 +1,21 @@
 @use '../../styles/variables.scss' as *;
 
 .footer {
+  color: $gray-700;
+
   background-color: $gray-100;
-  color: $gray-700; /* Ajuste para melhor contraste */
+
   padding: 60px 20px;
 
   .footer-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 30px;
-    max-width: 1200px;
-    margin: 0 auto;
     align-items: center;
+    gap: 30px;
+
+    max-width: 1200px;
+
+    margin: 0 auto;
   }
 
   .footer-logo {
@@ -26,8 +30,9 @@
   .footer-section {
     h3 {
       font-size: 1.2rem;
+      color: $gray-900;
+
       margin-bottom: 20px;
-      color: $gray-900; /* Ajuste para melhor contraste */
     }
 
     &.contact,
@@ -37,29 +42,35 @@
     }
 
     &.contact p {
-      margin-bottom: 12px;
       display: flex;
       align-items: center;
 
+      margin-bottom: 12px;
+
       svg {
+        color: $gray-700;
+
         margin-right: 10px;
-        color: $gray-700; /* Ajuste para melhor contraste */
       }
     }
 
     &.links ul {
       list-style: none;
+
       padding: 0;
 
       li a {
-        color: $gray-700; /* Ajuste para melhor contraste */
-        text-decoration: none;
         display: block;
+
+        text-decoration: none;
+        color: $gray-700;
+
         margin-bottom: 10px;
+
         transition: color 0.3s ease;
 
         &:hover {
-          color: $primary-dark; /* Ajuste para melhor contraste */
+          color: $primary-dark;
         }
       }
     }
@@ -68,28 +79,32 @@
       display: flex;
 
       a {
-        color: $gray-700; /* Ajuste para melhor contraste */
         font-size: 1.5rem;
+        color: $gray-700;
+
         margin-right: 20px;
+
         transition: color 0.3s ease;
 
         &:hover {
-          color: $primary-dark; /* Ajuste para melhor contraste */
+          color: $primary-dark;
         }
       }
     }
   }
 
   .footer-bottom {
-    text-align: center;
-    margin-top: 40px;
-    padding-top: 20px;
-    border-top: 1px solid $gray-200; /* Ajuste para melhor contraste */
     font-size: 0.9rem;
-    color: $gray-700; /* Ajuste para melhor contraste */
+    text-align: center;
+    color: $gray-700;
+
+    border-top: 1px solid $gray-200;
+
+    margin-top: 40px;
+
+    padding-top: 20px;
   }
 
-  /* Responsividade */
   @media (max-width: 768px) {
     .footer-container {
       grid-template-columns: 1fr;
@@ -98,6 +113,7 @@
     .footer-logo {
       grid-column: 1 / -1;
       text-align: center;
+
       margin-bottom: 20px;
     }
   }

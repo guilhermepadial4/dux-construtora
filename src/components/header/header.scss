@@ -10,11 +10,12 @@ header {
   left: 0;
   z-index: 1000;
 
-  background: $gray-100;
+  width: 100%;
+
+  background: $white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 
   padding: 15px 40px;
-
-  width: 100%;
 
   .container {
     display: flex;
@@ -47,7 +48,7 @@ header {
 
       &:hover,
       &.active {
-        color: $primary-dark;
+        color: $primary-color;
       }
     }
   }
