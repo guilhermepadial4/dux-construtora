@@ -65,7 +65,7 @@ export function Contact() {
 
   return (
     <>
-      <section className="contact-us">
+      <section className="contact-us" id='contact'>
         <div className="contact-info">
           <h2>Entre em Contato</h2>
           <p>Estamos prontos para atender você!</p>

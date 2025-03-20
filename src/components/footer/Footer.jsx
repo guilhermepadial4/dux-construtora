@@ -41,16 +41,18 @@ export function Footer() {
           <h3>Links Úteis</h3>
           <ul>
             <li>
-              <a href="/sobre">Sobre Nós</a>
+              <a href="#about">Sobre Nós</a>
             </li>
             <li>
-              <a href="/servicos">Serviços</a>
+              <a href="#services">Serviços</a>
             </li>
             <li>
-              <a href="/projetos">Projetos</a>
+              <a href="https://duxconstrutora.com.br/projetos/" target="_blank" rel="noopener noreferrer">
+                Projetos
+              </a>
             </li>
             <li>
-              <a href="/contato">Contato</a>
+              <a href="#contact">Contato</a>
             </li>
           </ul>
         </div>

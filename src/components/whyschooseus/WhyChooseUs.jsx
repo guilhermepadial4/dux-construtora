@@ -5,7 +5,7 @@ import './whychooseus.scss';
 export function WhyChooseUs() {
   return (
     <>
-      <section className="why-choose-us">
+      <section className="why-choose-us" id='about'>
         <div className="content-wrapper">
           <h2>Por que Escolher a Dux Construtora?</h2>
           <p className="subtitle">Comprometimento com a excelência, inovação e satisfação total dos clientes.</p>

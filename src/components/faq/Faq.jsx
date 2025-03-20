@@ -31,7 +31,7 @@ export function Faq() {
   };
 
   return (
-    <section className="faq">
+    <section className="faq" id='services'>
       <h2>Perguntas Frequentes</h2>
       <div className="faq-container">
         {faqData.map((item, index) => (
