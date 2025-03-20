@@ -52,6 +52,14 @@
 
         margin-right: 10px;
       }
+
+      a {
+        transition: color 0.3s ease-in-out;
+
+        &:hover {
+          color: $primary-color;
+        }
+      }
     }
 
     &.links ul {
