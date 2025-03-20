@@ -53,6 +53,14 @@
       margin-bottom: 20px;
     }
 
+    .error-message {
+      font-size: 0.94rem;
+      color: $error;
+
+      margin-top: -10px;
+      margin-bottom: 10px;
+    }
+
     form {
       display: flex;
       flex-direction: column;
