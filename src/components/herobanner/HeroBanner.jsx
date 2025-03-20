@@ -4,7 +4,7 @@ import './herobanner.scss';
 
 export function HeroBanner() {
   return (
-    <section className="hero-banner" style={{ backgroundImage: `url(${Banner})` }}>
+    <section className="hero-banner" id="home" style={{ backgroundImage: `url(${Banner})` }}>
       <div className="overlay">
         <div className="content">
           <h1>Construindo o Futuro com Qualidade e Confiança</h1>
