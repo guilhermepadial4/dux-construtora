@@ -23,7 +23,7 @@ export function Contact() {
     setErrors({ ...errors, [e.target.name]: '' });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     let formIsValid = true;
     const newErrors = { name: '', email: '', phone: '', message: '' };
@@ -54,18 +54,29 @@ export function Contact() {
     setErrors(newErrors);
 
     if (formIsValid) {
-      console.log(formData);
-      setFormData({ name: '', email: '', phone: '', message: '' });
-      setSuccessMessage('Sua mensagem foi enviada com sucesso!');
-      setTimeout(() => {
-        setSuccessMessage(null);
-      }, 3000);
+      try {
+        await fetch('https://script.google.com/macros/s/AKfycbyHqKufVw9WbTmpo_2GOU7vff7rv94k8xFAagiFcdugOgwjS4YyZc60h6LmRhJMhx9Q4g/exec', {
+          method: 'POST',
+          mode: 'no-cors',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(formData),
+        });
+
+        setFormData({ name: '', email: '', phone: '', message: '' });
+
+        setSuccessMessage('Sua mensagem foi enviada com sucesso!');
+        setTimeout(() => {
+          setSuccessMessage(null);
+        }, 3000);
+      } catch (error) {
+        alert(error.message);
+      }
     }
   };
 
   return (
     <>
-      <section className="contact-us" id='contact'>
+      <section className="contact-us" id="contact">
         <div className="contact-info">
           <h2>Entre em Contato</h2>
           <p>Estamos prontos para atender você!</p>
