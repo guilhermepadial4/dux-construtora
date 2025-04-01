@@ -1,5 +1,4 @@
-import { FaTools, FaShieldAlt, FaRegHandshake, FaStar } from 'react-icons/fa';
-
+import { FaShieldAlt, FaRegHandshake, FaBalanceScale, FaChartLine } from 'react-icons/fa';
 import './whychooseus.scss';
 
 export function WhyChooseUs() {
@@ -8,42 +7,31 @@ export function WhyChooseUs() {
       <section className="why-choose-us" id="about">
         <div className="content-wrapper">
           <h2>Por que Escolher a Dux Construtora?</h2>
-          <p className="subtitle">Comprometimento com a excelência, inovação e satisfação total dos clientes.</p>
+          <p className="subtitle">Invista em imóveis de leilão com segurança, rentabilidade e sem burocracia.</p>
           <div className="features">
             <div className="feature">
               <FaShieldAlt className="icon" />
-              <h3>Segurança e Qualidade</h3>
-              <p>Utilizamos materiais de alta qualidade e seguimos rigorosos padrões de segurança.</p>
+              <h3>Segurança Garantida</h3>
+              <p>Operação regulamentada pelo Banco Central, proporcionando total transparência e segurança no investimento.</p>
             </div>
             <div className="feature">
               <FaRegHandshake className="icon" />
-              <h3>Atendimento Personalizado</h3>
-              <p>Nosso time acompanha cada etapa do seu projeto, garantindo total transparência.</p>
+              <h3>Gestão Completa</h3>
+              <p>Cuidamos de toda a parte jurídica, desocupação e reformas para você investir sem preocupações.</p>
             </div>
             <div className="feature">
-              <FaTools className="icon" />
-              <h3>Equipe Especializada</h3>
-              <p>Profissionais altamente qualificados para entregar projetos impecáveis.</p>
+              <FaChartLine className="icon" />
+              <h3>Alta Rentabilidade</h3>
+              <p>Retorno estimado de 1% a 2% ao mês, oferecendo um investimento lucrativo e eficiente.</p>
             </div>
             <div className="feature">
-              <FaStar className="icon" />
-              <h3>Satisfação Garantida</h3>
-              <p>Centenas de clientes satisfeitos com obras entregues no prazo e com qualidade excepcional.</p>
-            </div>
-          </div>
-          <div className="testimonials">
-            <h3>O que nossos clientes dizem</h3>
-            <div className="testimonial">
-              <p>"A Dux Construtora superou nossas expectativas. O projeto foi entregue no prazo e com qualidade impecável."</p>
-              <span>- Maria Silva, Cliente Residencial</span>
-            </div>
-            <div className="testimonial">
-              <p>"Profissionais competentes e atenciosos. Recomendo a Dux Construtora para qualquer projeto."</p>
-              <span>- João Pereira, Cliente Comercial</span>
+              <FaBalanceScale className="icon" />
+              <h3>Sem Burocracia</h3>
+              <p>Facilidade no processo de investimento, com total suporte e transparência desde a aquisição até o lucro.</p>
             </div>
           </div>
           <a href="#contact">
-            <button className="cta-button">Solicite um Orçamento</button>
+            <button className="cta-button">Saiba Mais</button>
           </a>
         </div>
       </section>

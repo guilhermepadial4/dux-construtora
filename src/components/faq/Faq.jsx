@@ -4,22 +4,20 @@ import { AiOutlinePlus, AiOutlineMinus } from 'react-icons/ai';
 
 const faqData = [
   {
-    question: 'Quais serviços a Dux Construtora oferece?',
-    answer:
-      'A Dux Construtora oferece serviços de construção civil, reformas, consultoria em engenharia e projetos arquitetônicos personalizados.',
+    question: 'Como funciona o investimento em imóveis de leilão?',
+    answer: 'Selecionamos imóveis lucrativos, realizamos a aquisição e gestão completa, e distribuímos os lucros de forma transparente.',
   },
   {
-    question: 'A construtora trabalha com projetos residenciais e comerciais?',
-    answer: 'Sim! Atuamos tanto no segmento residencial quanto no comercial, garantindo qualidade e segurança em todas as obras.',
+    question: 'Qual a rentabilidade esperada?',
+    answer: 'Os investidores podem obter um retorno de 1% a 2% ao mês, dependendo do imóvel e das condições do mercado.',
   },
   {
-    question: 'Os projetos incluem acompanhamento de engenheiros?',
-    answer:
-      'Sim, todos os projetos contam com acompanhamento de engenheiros qualificados para garantir conformidade com normas e qualidade no resultado final.',
+    question: 'Preciso me preocupar com burocracias legais?',
+    answer: 'Não! A Dux Construtora cuida de toda a parte jurídica, desocupação e reformas, garantindo um processo tranquilo.',
   },
   {
-    question: 'A construtora possui certificações de qualidade?',
-    answer: 'Sim, seguimos todas as regulamentações e possuímos certificações exigidas pelo setor para garantir segurança e qualidade.',
+    question: 'O investimento é seguro?',
+    answer: 'Sim! A operação é regulamentada pelo Banco Central, garantindo total segurança e transparência.',
   },
 ];
 
@@ -31,7 +29,7 @@ export function Faq() {
   };
 
   return (
-    <section className="faq" id='services'>
+    <section className="faq" id="services">
       <h2>Perguntas Frequentes</h2>
       <div className="faq-container">
         {faqData.map((item, index) => (
